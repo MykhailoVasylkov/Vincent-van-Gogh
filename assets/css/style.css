@@ -8,3 +8,55 @@
     margin: 0;
     box-sizing: border-box
 }
+
+/*Main style*/
+body {
+    background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
+    color: #1c1c1f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Outfit", "Oswald", sans-serif;
+    /*For background gradient I used https://mycolor.space/*/
+    
+
+}
+
+/*Header*/
+header {
+    background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 20px #1c1c1f;
+
+}
+/*I used Chat-GPT to figure out how change size when hover over links and not to change position of neighbours*/
+header a {
+    text-decoration: none;
+    color: #1c1c1f;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 20px;
+    position: relative;
+}
+
+header a:hover {
+    transform: scale(1.15);
+}
+
+/*Style of the logo*/
+#logo {
+    font-weight: bold;
+    color: #5885ff;
+    background-color: #1c1c1f;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 0 5px 5px #1c1c1f;
+}
