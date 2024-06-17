@@ -180,3 +180,38 @@ header a:hover {
 #item3:hover {
     transform: scale(1.03);
 }
+
+/*Articles menu*/
+#articles-section {
+    margin: 20px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text-content {
+    width: 100%;
+    max-width: 1200px;
+    background-image: linear-gradient(to right top, #eae62a, #e2cf1c, #d8b810, #cca205, #bf8d00);
+    padding: 20px;
+    margin-top: 10px;
+    border: #bf8d00 solid;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+
+article h2,
+h3 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1c1c1f;
+
+}
+
+article span {
+    margin: 10px 0;
+    display: inline-block;
+}
