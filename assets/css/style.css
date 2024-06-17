@@ -295,3 +295,40 @@ details[open] summary::before {
     margin-top: 20px;
     cursor: pointer;
 }
+
+/*Footer*/
+#social-media {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-media i {
+    font-size: 200%;
+    padding: 5%;
+    color: #2c57ce;
+    text-shadow: 2px 2px 4px #2c57ce80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+
+}
+
+#social-media a:hover {
+    transform: scale(1.3);
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
+    margin-top: 10px;
+}
