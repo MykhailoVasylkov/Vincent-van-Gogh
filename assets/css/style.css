@@ -19,8 +19,20 @@ body {
     min-height: 100vh;
     font-family: "Outfit", "Oswald", sans-serif;
     
-    
+}
 
+/*Body background*/
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/body_background.webp);
+    background-size: cover;
+    z-index: -1;
 }
 
 /*Header*/
@@ -332,3 +344,4 @@ footer {
     background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
     margin-top: 10px;
 }
+
