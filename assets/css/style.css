@@ -47,7 +47,7 @@ header a:hover {
     transform: scale(1.15);
 }
 
-/*Style of the logo*/
+/*Logo style*/
 #logo {
     font-weight: bold;
     color: #5885ff;
@@ -59,4 +59,43 @@ header a:hover {
     justify-content: center;
     margin: 15px;
     box-shadow: 0 5px 5px #1c1c1f;
+}
+
+/*Menu*/
+#menu {
+    font-size: 150%;
+    letter-spacing: 3px;
+    list-style-type: none;
+    color: #1c1c1f;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+}
+
+#menu a {
+    display: flex;
+    color: inherit;
+    padding-bottom: 5px;
+}
+
+#menu a:hover {
+    color: #e5b734;
+}
+
+/*For display on mobile devices only*/
+#nav-toggle {
+    display: none;
+
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/*Styling of open page*/
+
+.open-page {
+    font-size: 120%;
+    text-shadow: 1px 1px 3px #1c1c1f;
 }
