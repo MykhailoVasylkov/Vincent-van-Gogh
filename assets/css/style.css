@@ -387,6 +387,7 @@ footer {
     }
 
     /*Used code snippet from Running Club Project*/
+    /*Dropdown menu*/
     #nav-toggle:checked~nav {
         display: block;
 
@@ -434,4 +435,5 @@ footer {
     #signup-form  {
         padding: 30px 15px;
     }
+
 }
