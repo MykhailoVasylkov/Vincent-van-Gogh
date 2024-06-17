@@ -18,10 +18,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: "Outfit", "Oswald", sans-serif;
-    
 }
 
 /*Body background*/
+/*Used Chat-GPT to figure out how to add background image to body that will be fixed and doesn't change size*/
 body::after {
     content: "";
     display: block;
@@ -47,6 +47,7 @@ header {
     box-shadow: 0 1px 20px #1c1c1f;
 
 }
+
 /*I used Chat-GPT to figure out how change size when hover over links and not to change position of neighbours*/
 header a {
     text-decoration: none;
@@ -71,6 +72,7 @@ header a:hover {
     align-items: center;
     justify-content: center;
     margin: 15px;
+    text-align: center;
     box-shadow: 0 5px 5px #1c1c1f;
 }
 
@@ -345,3 +347,91 @@ footer {
     margin-top: 10px;
 }
 
+/*Media query for for mobile devices (max 768px)*/
+@media (max-width: 768px) {
+
+    /*Body background*/
+    body::after {
+        background-image: none;
+    }
+
+    /*Menu*/
+    /*Used Chat-GPT to figure out how to make dropdown menu*/
+    #menu {
+        display: block;
+        align-items: center;
+
+    }
+
+    #menu a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    nav {
+        position: absolute;
+        background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
+        width: 100%;
+        left: 0;
+        display: none;
+        top: 100%;
+    }
+
+    /*Logo*/
+    #logo {
+        width: 150px;
+        height: 75px;
+        font-size: 90%;
+    }
+
+    /*Used code snippet from Running Club Project*/
+    #nav-toggle:checked~nav {
+        display: block;
+
+    }
+
+    .nav-toggle-label {
+        font-size: 2rem;
+        margin-right: 20px;
+        display: flex;
+    }
+
+    /*Grid menu*/
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+        grid-template-rows: 150px 150px 150px;
+    }
+
+    .grid-item {
+        text-align: center;
+    }
+
+    #item1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #item2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #item3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    /*Sign-up*/
+
+    #signup-section {
+        padding: 20px;
+    }
+
+    #signup-form  {
+        padding: 30px 15px;
+    }
+}
