@@ -215,3 +215,29 @@ article span {
     margin: 10px 0;
     display: inline-block;
 }
+
+/*Overwrite default summary sign*/
+/*I used materials from these articles:
+https://www.w3schools.com/tags/tag_summary.asp
+https://www.sitepoint.com/style-html-details-element/ */
+
+summary {
+    list-style-type: '⬇ ';
+
+}
+
+details[open]>summary {
+    list-style-type: '⬆ ';
+
+}
+
+summary::before {
+    content: "Click to see the full article";
+    position: absolute;
+    color: white;
+}
+
+details[open] summary::before {
+    content: "Click to close article";
+    color: white;
+}
