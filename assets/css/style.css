@@ -195,8 +195,17 @@ header a:hover {
     transform: scale(1.03);
 }
 
+/*Section rules for biography, gallery and in modern culture pages*/
+.section-rule {
+    margin: 140px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /*Articles menu*/
-#articles-section {
+.articles-section {
     margin: 20px 15px 0 15px;
     display: flex;
     justify-content: center;
@@ -216,8 +225,14 @@ header a:hover {
     text-align: justify;
 }
 
+article h1 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 150%;
+}
 
-article h2,
+article
+h2,
 h3 {
     margin: 20px 0;
     text-transform: uppercase;
@@ -432,8 +447,12 @@ footer {
         padding: 20px;
     }
 
-    #signup-form  {
+    #signup-form {
         padding: 30px 15px;
     }
 
+    /*Section rules for biography, gallery and in modern culture pages*/
+    .section-rule {
+        margin: 115px 15px 0 15px;
+    }
 }
