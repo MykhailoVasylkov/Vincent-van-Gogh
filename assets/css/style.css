@@ -195,15 +195,6 @@ header a:hover {
     transform: scale(1.03);
 }
 
-/*Section rules for biography, gallery and in modern culture pages*/
-.section-rule {
-    margin: 140px 15px 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 /*Articles menu*/
 .articles-section {
     margin: 20px 15px 0 15px;
@@ -231,8 +222,7 @@ article h1 {
     font-size: 150%;
 }
 
-article
-h2,
+article h2,
 h3 {
     margin: 20px 0;
     text-transform: uppercase;
@@ -362,6 +352,69 @@ footer {
     margin-top: 10px;
 }
 
+/*Section rules for biography page*/
+.section-rule {
+    margin: 140px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*Gallery page*/
+/*Override maine rule for body background*/
+#gallery-page {
+    background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
+}
+
+body.gallery-page::after {
+    background-image: none;
+}
+
+#gallery {
+    margin: 140px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gallery h2 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*I used https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+figure {
+    margin: 0;
+    border: 2px solid #e5b734;
+    padding: 15px;
+    text-align: center;
+    background-color: #5885ffb7;
+    border-radius: 3px;
+    box-shadow: 0 1px px #1c1c1f;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #1c1c1f;
+}
+
 /*Media query for for mobile devices (max 768px)*/
 @media (max-width: 768px) {
 
@@ -454,5 +507,14 @@ footer {
     /*Section rules for biography, gallery and in modern culture pages*/
     .section-rule {
         margin: 115px 15px 0 15px;
+    }
+}
+
+
+/*Media query for screens more then 1200px*/
+/*To set gallery grid on 3 columns*/
+@media (min-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
