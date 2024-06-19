@@ -504,12 +504,28 @@ figcaption {
         padding: 30px 15px;
     }
 
-    /*Section rules for biography, gallery and in modern culture pages*/
+    /*Section rules for biography*/
     .section-rule {
         margin: 115px 15px 0 15px;
     }
-}
 
+    /*Gallery*/
+    #gallery {
+        margin: 115px 15px 0 15px;
+
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    figure {
+        padding: 10px;
+    }
+
+
+}
 
 /*Media query for screens more then 1200px*/
 /*To set gallery grid on 3 columns*/
