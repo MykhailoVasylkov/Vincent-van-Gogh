@@ -121,7 +121,6 @@ header a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     gap: 10px;
     margin: 140px 15px 0 15px;
     grid-template-rows: 250px 250px;
@@ -363,6 +362,100 @@ footer {
 
 
 /*Gallery page*/
+
+/*Grid menu*/
+.gallery-grid-container {
+    display: grid;
+    gap: 10px;
+    margin: 140px 15px 0 15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 150px));
+}
+
+.gallery-grid-item {
+    padding: 20px;
+    font-size: 35px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px #1c1c1f;
+}
+
+
+.gallery-grid-item p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.gallery-grid-item:hover p {
+    transform: scale(1.15);
+    color: #2a2a4e;
+}
+
+#gallery-item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url(../images/gallery/portraits/vincent_van_gogh_portrait_dArman_d_roulin_1888.webp) no-repeat center center/cover;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#gallery-item1:hover {
+    transform: scale(1.03);
+}
+
+#gallery-item2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url(../images/gallery/self_portraits/van_gogh_self_portrait\ _with_straw_hat_1887.webp) no-repeat center center/cover;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+#gallery-item2:hover {
+    transform: scale(1.03);
+}
+
+#gallery-item3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url(../images/gallery/flowers/vincent_van_gogh_irises_1889.webp) no-repeat center center/cover;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#gallery-item3:hover {
+    transform: scale(1.03);
+}
+
+#gallery-item4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url(../images/gallery/cityscapes_and_landscapes/vincent-cafe_the_night_café.jpg) no-repeat center center/cover;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#gallery-item3:hover {
+    transform: scale(1.03);
+}
+
 /*Override maine rule for body background*/
 #gallery-page {
     background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
@@ -373,7 +466,7 @@ body.gallery-page::after {
 }
 
 #gallery {
-    margin: 140px 15px 0 15px;
+    margin: 10px 15px 0 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -413,6 +506,13 @@ figcaption {
     margin-top: 10px;
     font-style: italic;
     color: #1c1c1f;
+}
+
+/*Media query for for mobile devices (max 420px)*/
+@media (max-width: 420px) {
+.gallery-grid-item {
+    font-size: 30px
+}
 }
 
 /*Media query for for mobile devices (max 768px)*/
@@ -510,9 +610,30 @@ figcaption {
     }
 
     /*Gallery*/
-    #gallery {
-        margin: 115px 15px 0 15px;
 
+    /*Grid menu*/
+    .gallery-grid-container {
+        margin-top: 120px;
+    }
+
+    #gallery-item1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #gallery-item2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #gallery-item3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #gallery-item4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
     }
 
     .gallery-grid {
