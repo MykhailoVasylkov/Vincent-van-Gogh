@@ -212,7 +212,7 @@ header a:hover {
     margin-top: 10px;
     border: #bf8d00 solid;
     border-radius: 3px;
-    text-align: justify;
+    text-align:left;
 }
 
 article h1 {
@@ -351,7 +351,7 @@ footer {
     margin-top: 10px;
 }
 
-/*Section rules for biography page*/
+/*Section rule for biography and in modern culture pages*/
 .section-rule {
     margin: 140px 15px 0 15px;
     display: flex;
@@ -366,8 +366,8 @@ footer {
 /*Grid menu*/
 .gallery-grid-container {
     display: grid;
-    gap: 10px;
-    margin: 140px 15px 0 15px;
+    gap: 15px;
+    margin: 145px 15px 0 15px;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(100px, 150px));
 }
@@ -510,9 +510,9 @@ figcaption {
 
 /*Media query for for mobile devices (max 420px)*/
 @media (max-width: 420px) {
-.gallery-grid-item {
-    font-size: 30px
-}
+    .gallery-grid-item {
+        font-size: 25px;
+    }
 }
 
 /*Media query for for mobile devices (max 768px)*/
@@ -538,7 +538,7 @@ figcaption {
     }
 
 
-    nav {
+   nav {
         position: absolute;
         background-image: linear-gradient(to right top, #e5b734, #eac82a, #edda1e, #edec10, #e9ff00);
         width: 100%;
