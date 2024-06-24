@@ -368,6 +368,7 @@ footer {
 /*Gallery page*/
 
 /*Grid menu*/
+/*Used https://www.w3schools.com/css/css_grid.asp*/
 .gallery-grid-container {
     display: grid;
     gap: 15px;
