@@ -195,6 +195,10 @@ header a:hover {
 }
 
 /*Articles menu*/
+
+#hiden {
+    display: none;
+}
 .articles-section {
     margin: 20px 15px 0 15px;
     display: flex;
@@ -492,7 +496,7 @@ figure {
     text-align: center;
     background-color: #5885ffb7;
     border-radius: 3px;
-    box-shadow: 0 1px px #1c1c1f;
+    box-shadow: 0 1px 5px #1c1c1f;
 }
 
 figure img {
