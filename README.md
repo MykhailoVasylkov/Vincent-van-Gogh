@@ -25,7 +25,7 @@ The Vincent van Gogh website is designed to provide a look at the life and works
 - This section provides a list of three articles on the topic of Vincent van Gogh. The main feature of this section is that each article can be opened and closed with one click using the details and summary pair.
 ![Articles Section](/assets/images/photos_for_readme/articles_serction.png)
 
-#### Sign-Up section
+#### Sign-Up Section
 - Gives users the opportunity to join the mailing list to get news about updates.
 ![Sign-Up section](/assets/images/photos_for_readme/sign_up.png)
 
@@ -33,25 +33,25 @@ The Vincent van Gogh website is designed to provide a look at the life and works
 - Featured on all pages, includes links to social media profiles. These links open in a new tab, ensuring users can easily stay on the website.
 ![Footer](/assets/images/photos_for_readme/footer.png)
 
-## Biography page
+## Biography Page
 
-#### Biography section
+#### Biography Section
 - Includes an article about Van Gogh's biography.
 ![Biography section](/assets/images/photos_for_readme/biography.png)
 
-## Gallery page
+## Gallery Page
 
 #### Navigation Grid Menu
 - The Navigation Grid Menu includes tiles linked to the Portraits, Self-Portraits, Flowers, and Cityscapes and Landscapes sections of the gallery page with high-quality images of Van Gogh's masterpieces in the background with a text overlay, instantly capturing the user's attention and giving them an understanding of what they can find on this page.
 ![Navigation Grid Menu](/assets/images/photos_for_readme/gallery_grid_menu.png)
 
-#### Gallery section
+#### Gallery Section
 - The Gallery includes four sections: Portraits, Self-Portraits, Flowers, and Cityscapes and Landscapes. Each section is a grid of painting photos with captions underneath.
 ![Gallery section](/assets/images/photos_for_readme/gallery_section.png)
 
-## In modern culture page
+## In Modern Culture page
 
-#### Article section
+#### Article Section
 - Includes the article "Van Gogh: Films and Documentaries" that provides users with a list of films and documentaries about Van Gogh. This article also gives links to IMDB and Rotten Tomatoes pages that open in a new tab.
 ![Article section](/assets/images/photos_for_readme/in_modern_culture.png)
 
@@ -68,7 +68,7 @@ The Vincent van Gogh website is designed to provide a look at the life and works
 - I confirmed that the sign-up form works well: it will not submit until the required fields are filled, the email field accepts only email addresses, and the submit button works.
 
 ### Bugs
-#### Solved bugs
+#### Solved Bugs
 - When I checked the website through the W3 validator I noticed that a number of errors were made:
 1. A p tag was inside the summary.
 2. A script was in the body.
